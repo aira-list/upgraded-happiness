@@ -1,0 +1,36 @@
+site_name: AIRA Hub Portal
+
+theme:
+  name: material
+  favicon: res/images/favicon.ico
+  logo: res/images/list_logos/LIST_2016_WHITE_H75px.png
+  features:
+    - search
+    - navigation.tabs
+    - navigation.indexes
+    - toc.integrate
+    - toc.follow
+
+plugins:
+  - search
+  - redirects:
+      redirect_maps:
+        'index.md': 'AIRA Team/index.md'
+  - awesome-pages
+
+nav:
+  - ... | regex=.*\.md   # This will include all .md files automatically
+
+extra:
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/luxembourg-institute-of-science-and-technology-list-
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/channel/UCTRznhKNBzYDkB2dJWmTQfQ
+    - icon: fontawesome/brands/x-twitter
+      link: https://twitter.com/LIST_Luxembourg
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/LISTLuxembourg/
+
+
+copyright: © Copyright 2025 Luxembourg Institute of Science & Technology - LIST
