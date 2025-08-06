@@ -8,7 +8,7 @@ The follow paragraphs describe how to setup a continuous integration and deliver
 
 This article illustrates the configuration of a pipeline that performs continuous integration (build) as well as continuous delivery steps (package and deployment) for a Java based application. More concretely, every pushed commit triggers a code build and packages the resulting application into a docker image that is pushed to the LIST Artifactory. Afterwards, the service will be automatically deployed in a [Kubernetes](https://kubernetes.io/) cluster. The following figure illustrates the pipeline workflow.
 
-![CI/CD workflow](/res/images/guides/cicd-pipelines/devops.svg "CI/CD workflow")
+![CI/CD workflow](../../res/images/guides/cicd-pipelines/devops.svg "CI/CD workflow")
 
 All jobs performed by the GitLab Runner are executed in a [Docker](https://www.docker.com/) container. This approach ensures that each build is done in a self-contained, reproducible environment, thereby enhancing consistency, reducing dependency issues, and streamlining the development-to-deployment workflow.
 
