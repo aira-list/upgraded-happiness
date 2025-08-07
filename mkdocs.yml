@@ -34,3 +34,16 @@ extra:
 
 
 copyright: © Copyright 2025 Luxembourg Institute of Science & Technology - LIST
+
+validation:
+  links:
+    not_found: warn
+    absolute_links: relative_to_docs
+    anchors: warn
+    unrecognized_links: warn
+  nav:
+    omitted_files: info
+    not_found: warn
+    absolute_links: info
+
+
